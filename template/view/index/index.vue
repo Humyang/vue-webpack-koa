@@ -1,7 +1,7 @@
 
 <template>
   <div>
-    <p>欢迎观临</p>
+    <p>欢迎光临</p>
   </div>
 </template>
 

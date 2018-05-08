@@ -12,7 +12,7 @@
         <i class="el-icon-menu"></i>
         <span slot="title">首页</span>
       </el-menu-item>
-      <el-menu-item index="plan">
+      <el-menu-item index="/">
         <i class="el-icon-menu"></i>
         <span slot="title">计划面板</span>
       </el-menu-item>
@@ -68,8 +68,11 @@ export default {
     }
   },
   mounted() {
-    // alert(1);
-    
+    // alert(this.$store.getters.isLogined());
+    if(!this.$store.getters.isLogined()){
+      alert('未登录')
+      this.$router.push('/login')
+    }
     this.updateActivePath(this.$route);
   }
   //   ,
