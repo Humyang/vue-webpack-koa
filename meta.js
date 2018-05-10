@@ -51,6 +51,30 @@ module.exports = {
       type: 'string',
       message: 'Author',
     },
+    domain: {
+      when: 'isNotTest',
+      type: 'string',
+      required: true,
+      message: 'like pp.dve2.com'
+    },
+    api_domain:{
+      when: 'isNotTest',
+      type: 'string',
+      required: true,
+      message: 'like pp.api.dve2.com'
+    },
+    ServerPort:{
+      when: 'isNotTest',
+      type: 'string',
+      required: true,
+      message: 'api port: 8502'
+    },
+    StaticPort:{
+      when: 'isNotTest',
+      type: 'string',
+      required: true,
+      message: 'static file port: 8500'
+    },
     build: {
       when: 'isNotTest',
       type: 'list',
