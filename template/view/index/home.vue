@@ -12,14 +12,6 @@
         <i class="el-icon-menu"></i>
         <span slot="title">首页</span>
       </el-menu-item>
-      <el-menu-item index="/">
-        <i class="el-icon-menu"></i>
-        <span slot="title">计划面板</span>
-      </el-menu-item>
-      <el-menu-item index="todo">
-        <i class="el-icon-menu"></i>
-        <span slot="title">TODO</span>
-      </el-menu-item>
       <!-- <el-menu-item index="3">
       <i class="el-icon-setting"></i>
       <span slot="title">导航四</span>
