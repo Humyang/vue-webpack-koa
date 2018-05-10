@@ -1,0 +1,50 @@
+/* 布局 */
+
+/* flex */
+.flex{
+    display: flex
+  }
+  .flex.vcenter{
+    justify-content: center;
+    align-items: center;
+  }
+  .flex.row{
+    flex-direction:row; 
+  }
+  .flex.column{
+    flex-direction: column;
+  }
+  .flex.between{
+    justify-content: space-between;
+  }
+  .flex.start{
+    justify-content: flex-start;
+  }
+  .flex.align-baseline{
+    align-items: baseline;
+  }
+  .flex.align-start{
+    align-items: flex-start;
+  }
+  .flex.align-end{
+    align-items: flex-end;
+  }
+  .flex.wrap{
+    flex-wrap:wrap;
+  }
+  .flex.center{
+    justify-content: center;
+  }
+  .flex.j-end{
+    justify-content: flex-end;
+  }
+  .flex.align-center{
+    align-items: center;
+  }
+  .flex .grow{
+    flex-grow: 1
+  }
+  
+  
+  
+  

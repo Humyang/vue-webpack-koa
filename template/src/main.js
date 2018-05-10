@@ -1,24 +1,21 @@
-{{#if_eq build "standalone"}}
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-{{/if_eq}}
 import Vue from 'vue'
 import App from './App'
+import router from './router/index'
+import store from './vuex/store'
+import ElementUI from 'element-ui';
+import * as api from '@/api/index'
 
-import router from './router'
-
+import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.config.productionTip = false
 
+Vue.use(ElementUI);
+Vue.prototype.api = api
+
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  {{#if_eq build "runtime"}}
-  render: h => h(App)
-  {{/if_eq}}
-  {{#if_eq build "standalone"}}
-  components: { App },
-  template: '<App/>'
-  {{/if_eq}}
+    router,
+    store,
+    render: h => h(App),
+    el: '#app'
 })
