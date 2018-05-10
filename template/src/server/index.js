@@ -12,24 +12,26 @@ const app = new koa();
 
 var ServerPort = {{ ServerPort }}
 
-var Plan = require('./module/plan')
-var Todo = require('./module/todo')
 
-router.post('/delTask',OAUTCH_CLIENT.login_check_remote(),Plan.delTask)
-router.post('/plan_list',OAUTCH_CLIENT.login_check_remote(),Plan.getPlanList)
-router.post('/resumeTask',OAUTCH_CLIENT.login_check_remote(),Plan.resumeTask)
-router.post('/startTask',OAUTCH_CLIENT.login_check_remote(),Plan.startTask)
-router.post('/stopTask',OAUTCH_CLIENT.login_check_remote(),Plan.stopTask)
-router.post('/add_plan',async function(ctx,next){
-    ctx.header._token = ctx.request.fields.token
-    await next()
-},OAUTCH_CLIENT.login_check_remote(),Plan.addPlan,async function(ctx,next){
-    debugger
-    ctx.redirect(ctx.header.referer);  
-})
 
-router.post('/todo/getjson',OAUTCH_CLIENT.login_check_remote(),Todo.getJsonById)
-router.post('/todo/update',OAUTCH_CLIENT.login_check_remote(),Todo.update)
+
+// var Plan = require('./module/plan')
+// router.post('/delTask',OAUTCH_CLIENT.login_check_remote(),Plan.delTask)
+// router.post('/plan_list',OAUTCH_CLIENT.login_check_remote(),Plan.getPlanList)
+// router.post('/resumeTask',OAUTCH_CLIENT.login_check_remote(),Plan.resumeTask)
+// router.post('/startTask',OAUTCH_CLIENT.login_check_remote(),Plan.startTask)
+// router.post('/stopTask',OAUTCH_CLIENT.login_check_remote(),Plan.stopTask)
+// router.post('/add_plan',async function(ctx,next){
+//     ctx.header._token = ctx.request.fields.token
+//     await next()
+// },OAUTCH_CLIENT.login_check_remote(),Plan.addPlan,async function(ctx,next){
+//     debugger
+//     ctx.redirect(ctx.header.referer);  
+// })
+
+// var Todo = require('./module/todo')
+// router.post('/todo/getjson',OAUTCH_CLIENT.login_check_remote(),Todo.getJsonById)
+// router.post('/todo/update',OAUTCH_CLIENT.login_check_remote(),Todo.update)
 
 app.use(cors())
 app.use(mongo())

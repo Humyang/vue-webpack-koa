@@ -75,6 +75,12 @@ module.exports = {
       required: true,
       message: 'static file port: 8500'
     },
+    dbName:{
+      when: 'isNotTest',
+      type: 'string',
+      required: true,
+      message: 'type mongodb name'
+    },
     build: {
       when: 'isNotTest',
       type: 'list',

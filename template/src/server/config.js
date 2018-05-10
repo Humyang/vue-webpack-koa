@@ -1,3 +1,3 @@
 module.exports = {
-    dbName:'PlanPlus'
+    dbName:'{{ dbName }}'
 }
