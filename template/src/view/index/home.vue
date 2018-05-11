@@ -12,14 +12,6 @@
         <i class="el-icon-menu"></i>
         <span slot="title">首页</span>
       </el-menu-item>
-      <el-menu-item index="plan">
-        <i class="el-icon-menu"></i>
-        <span slot="title">计划面板</span>
-      </el-menu-item>
-      <el-menu-item index="todo">
-        <i class="el-icon-menu"></i>
-        <span slot="title">TODO</span>
-      </el-menu-item>
       <!-- <el-menu-item index="3">
       <i class="el-icon-setting"></i>
       <span slot="title">导航四</span>
@@ -68,8 +60,11 @@ export default {
     }
   },
   mounted() {
-    // alert(1);
-    
+    // alert(this.$store.getters.isLogined());
+    if(!this.$store.getters.isLogined()){
+      alert('未登录')
+      this.$router.push('/login')
+    }
     this.updateActivePath(this.$route);
   }
   //   ,

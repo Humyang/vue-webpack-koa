@@ -8,7 +8,9 @@
 
 import url from 'url'
 import {
-  Host
+  Host,
+  IP,
+  StaticPort as PORT
 } from '@/api/env.js' 
 export default {
   mounted:function(){
