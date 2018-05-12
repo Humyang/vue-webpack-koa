@@ -55,15 +55,10 @@ module.exports = {
       when: 'isNotTest',
       type: 'string',
       required: true,
-      message: 'like pp.dve2.com'
+      message: 'like pp.dve2.com,type pp'
 
     },
-    api_domain:{
-      when: 'isNotTest',
-      type: 'string',
-      required: true,
-      message: 'like pp.api.dve2.com'
-    },
+    
     ServerPort:{
       when: 'isNotTest',
       type: 'string',

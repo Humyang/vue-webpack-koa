@@ -5,6 +5,7 @@
   "author": "{{ author }}",
   "private": true,
   "scripts": {
+    "ser":"node src/server/index",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     {{#if_eq runner "jest"}}
@@ -25,6 +26,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "oauth_serve": "^1.0.0",
     "vue": "^2.5.2"{{#router}},
     "vue-router": "^3.0.1"{{/router}}
   },

@@ -1,3 +1,8 @@
+ ```
+vue init C:\Users\jesse\Documents\GitHub\vue-webpack-koa test
+ ```
+ 
+
 # vue-webpack-boilerplate
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
