@@ -10,8 +10,8 @@ export const StaticPort = {{ StaticPort }}
 
 if (process.env.NODE_ENV === 'production') {
 
- setip = 'http://{{ api_domain}}'
- Host1 = 'http://{{ domain }}'
+ setip = 'http://{{ api_domain}}.api.dve2.com'
+ Host1 = 'http://{{ domain }}.dve2.com'
 
 }else{
 

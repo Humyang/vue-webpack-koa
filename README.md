@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 ``` bash
 vue init C:\Users\admin\Documents\GitHub\vue-webpack-koa test
 ```
+=======
+ ```
+vue init C:\Users\jesse\Documents\GitHub\vue-webpack-koa test
+ ```
+ 
+>>>>>>> 9cc3e8927b27e7a9dbc9cbcf18e94096c4bab1f7
 
 # vue-webpack-boilerplate
 

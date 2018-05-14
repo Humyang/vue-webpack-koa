@@ -27,8 +27,13 @@
   },
   "dependencies": {
     "oauth_serve": "^1.0.0",
+<<<<<<< HEAD
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
+=======
+    "vue": "^2.5.2"{{#router}},
+    "vue-router": "^3.0.1"{{/router}}
+>>>>>>> 9cc3e8927b27e7a9dbc9cbcf18e94096c4bab1f7
   },
   "devDependencies": {
     {{#lint}}
